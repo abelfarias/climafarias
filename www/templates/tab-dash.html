@@ -1,0 +1,21 @@
+<ion-view view-title="Dias Y Temperatura ">
+  <ion-content>
+  <ion-refresher
+		pulling-text="Pull to refresh..."
+		on-refresh="doRefresh()">
+  </ion-refresher>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+		<div class="row">
+		  <div class="col">{{chat.dt*1000 | date:'dd'}}</div>
+		  <div class="col">{{chat.temp.day}}°</div>
+		  <div class="col">{{chat.temp.max}}Max</div>
+		  <div class="col">{{chat.temp.min}}Min</div>
+		</div>
+		<div>
+		<a class="button icon-right ion-chevron-left button-calm" href="#/tab/account">Regresar</a>
+		</div>
+	  </ion-item>
+	</ion-list>
+  </ion-content>
+</ion-view>

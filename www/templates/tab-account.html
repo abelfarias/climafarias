@@ -1,0 +1,39 @@
+<ion-view view-title="Seleccione Ciudad">
+  <ion-content>
+	<div class="row" align="center">
+	  <div class="col">
+		<select ng-model="mySelect" ng-change="unidades(mySelect)">
+		  <option ng-selected="true">Metric</option>
+		  <option>Imperial</option>
+		  <option>Kelvin</option>
+		</select>
+	  </div>
+	</div>
+	<div class="row" align="center">
+	  <div class="col">
+		<select ng-model="mySelect2" ng-change="ciudad(mySelect2)">
+		  <option ng-selected="true">Cancún</option>
+		  <option>Merida</option>
+		  <option>Playa del Carmen</option>
+		  <option>Puebla</option>
+		  <option>Canada</option>
+		</select>
+	  </div>
+	</div>
+	<div class="row" align="center">
+	  <div class="col">
+		<select ng-model="mySelect3" ng-change="cantidad(mySelect3)">
+		  <option ng-selected="true">1</option>
+		  <option>2</option>
+		  <option>3</option>
+		  <option>4</option>
+		  <option>5</option>
+		  <option>6</option>
+		  <option>7</option>
+		
+		</select>
+	  </div>
+	</div>
+	<a class="button icon-right ion-chevron-left button-calm" href="#/tab/clima">Ver la Temperatura de la Ciudad</a>
+  </ion-content>
+</ion-view>

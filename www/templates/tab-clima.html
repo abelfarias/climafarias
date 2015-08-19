@@ -1,0 +1,34 @@
+<ion-view view-title="Temperatura de la Ciudad ">
+  <ion-content>
+  <ion-refresher
+		pulling-text="Pull to refresh..."
+		on-refresh="doRefresh()">
+  </ion-refresher>
+    <div class="row" align="center">
+	<h4>{{ciudad}}</h4>
+	</div>
+	<div class="row" align="center">
+	<h1>{{humedad}}°</h1>
+	<img ng-src="http://openweathermap.org/img/w/01n.png">
+	</div>
+	<div class="row" align="center">
+	<h1>{{temperatura}}</h1>
+	</div>
+	<div class="row" align="center">
+	<h1>{{temMin}}</h1>
+	</div>
+	<div class="row" align="center">
+	<h1>{{tempMax}}</h1>
+	</div>
+	
+	<div>
+	<a class="button icon-right ion-chevron-right button-calm" href="#/tab/account">Seleccionar Otra Ciudad</a>
+	</div>
+	<div>
+	<a class="button icon-right ion-chevron-right button-calm" href="#/tab/chats">Ver Temperatura Y Horas</a>
+	</div>
+	<div>
+	<a class="button icon-right ion-chevron-right button-calm" href="#/tab/dash">Ver Dias Y Temperatura</a>
+	</div>
+  </ion-content>
+</ion-view>
